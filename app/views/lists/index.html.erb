@@ -1,0 +1,16 @@
+<div class="banner" data-controller="navbar" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>Save any kind of movies</strong>!</h1>
+    <p>Classic</p>
+  </div>
+</div>
+
+
+ <% @lists.each do |list| %>
+  <p>
+    <strong>Name:</strong>
+    <h2><%= link_to list.name, list_path(list) %></h2>
+  <p>
+
+  <% end %>
+<%= link_to "Create a list", new_list_path(@list) %>

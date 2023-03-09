@@ -1,0 +1,14 @@
+<h1>Lists#show</h1>
+<p>Find me in app/views/lists/show.html.erb</p>
+<div class="container text-center">
+<h2><%= @list.name %></h2>
+
+
+
+
+
+<%= link_to "Create a bookmark",  new_list_bookmark_path(@list) %>
+
+
+<%= link_to "All Lists", lists_path %>
+</div>
